@@ -253,8 +253,7 @@ goog.window.openBlank = function(opt_message, opt_options, opt_parentWin) {
           goog.string.Const.from(
               'b/12014412, encoded string in javascript: URL'),
           'javascript:"' + encodeURI(loadingMessage) + '"');
-  return /** @type {Window} */ (goog.window.open(
-      url, opt_options, opt_parentWin));
+  return goog.window.open(url, opt_options, opt_parentWin);
 };
 
 
